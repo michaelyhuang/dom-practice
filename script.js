@@ -24,3 +24,23 @@ div.appendChild(h1);
 const pdiv = document.createElement('pdiv');
 pdiv.textContent = "ME TOO"
 div.appendChild(pdiv)
+
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert("Hello World");
+
+const btn2 = document.querySelector('#btn2');
+btn2.addEventListener('click', () => {
+  alert("Hello World");
+});
+
+btn3.addEventListener('click', function (e) {
+    console.log(e);
+});
+
+btn4.addEventListener('click', function (e) {
+    console.log(e.target);
+});
+
+btn4.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });
